@@ -1,0 +1,21 @@
+.paper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .orText {
+        margin-top: var(--s-1);
+        margin-bottom: var(--s-1);
+    }
+
+    .wordCard {
+        min-width: var(--s-max-content-small);
+        margin-top: var(--s-3);
+        margin-bottom: var(--s-3);
+    }
+}
+
+.middle {
+    color: var(--c-green);
+}

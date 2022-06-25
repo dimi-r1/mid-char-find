@@ -1,0 +1,17 @@
+.link {
+    margin-right: 20px !important;
+    margin-left: 20px !important;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 900px) {
+    .logo {
+        margin: auto;
+        position: relative;
+        right: 24px;
+    }
+}
+
+.logo {
+    margin-right: auto;
+}

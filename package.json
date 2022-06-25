@@ -1,0 +1,80 @@
+{
+    "name": "material-app",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@emotion/react": "^11.7.1",
+        "@emotion/styled": "^11.6.0",
+        "@mui/icons-material": "^5.2.1",
+        "@mui/material": "^5.2.4",
+        "@mui/styles": "^5.2.3",
+        "@testing-library/dom": "^8.14.0",
+        "@testing-library/jest-dom": "^5.16.4",
+        "@testing-library/react": "^11.1.0",
+        "@testing-library/user-event": "^14.2.1",
+        "@types/jest": "^27.0.2",
+        "@types/node": "^16.11.0",
+        "@types/node-sass": "^4.11.2",
+        "@typescript-eslint/parser": "^5.0.0",
+        "babel-eslint": "^10.1.0",
+        "classnames": "^2.3.1",
+        "jest-fetch-mock": "^3.0.3",
+        "node-sass": "^6.0.1",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-router-dom": "^6.1.1",
+        "react-scripts": "4.0.3",
+        "web-vitals": "^1.0.1"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "prepare": "husky install",
+        "lint": "eslint . --cache --ext js,jsx,ts,tsx,md",
+        "lint:fix": "eslint . --cache --ext js,jsx,ts,tsx,md --fix"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "@types/react": "^17.0.30",
+        "@types/react-dom": "^17.0.9",
+        "eslint": "^7.2.0",
+        "eslint-config-airbnb": "18.2.1",
+        "eslint-config-airbnb-typescript": "^14.0.1",
+        "eslint-config-node": "^4.1.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-jsx-a11y": "^6.4.1",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prettier": "^4.0.0",
+        "eslint-plugin-react": "^7.21.5",
+        "eslint-plugin-react-hooks": "^1.7.0",
+        "husky": "^7.0.2",
+        "lint-staged": "^11.2.0",
+        "prettier": "^2.4.1",
+        "react-test-renderer": "^18.2.0",
+        "typescript": "^4.4.4"
+    },
+    "lint-staged": {
+        "*.{ts,js,jsx,tsx,md}": "eslint --cache --fix",
+        "*.{ts,js,jsx,tsx,css,scss,md,json}": "prettier --write"
+    }
+}

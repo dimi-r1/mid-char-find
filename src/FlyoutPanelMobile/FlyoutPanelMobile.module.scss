@@ -1,0 +1,10 @@
+.drawerHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.invisible {
+    // todo: This needs to be equal to the button's width.
+    // It is at the moment but get is as a variable instead so it changes dynamically.
+    width: 48px;
+}

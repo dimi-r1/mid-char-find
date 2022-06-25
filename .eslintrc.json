@@ -1,0 +1,47 @@
+{
+    "extends": [
+        "airbnb",
+        "airbnb-typescript",
+        "prettier",
+        "plugin:node/recommended",
+        "airbnb/hooks"
+    ],
+    "root": true,
+    "env": {
+        "es6": true
+    },
+    "parserOptions": {
+        "project": "./tsconfig.json",
+        "sourceType": "module",
+        "ecmaVersion": 2020,
+        "ecmaFeatures": { "jsx": true }
+    },
+
+    "plugins": ["prettier"],
+    "rules": {
+        "react/jsx-indent": "off",
+        "react/prefer-stateless-function": "warn",
+        "react/jsx-key": "warn",
+        "react/jsx-curly-spacing": "off",
+        "react/jsx-filename-extension": [
+            1,
+            { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
+        ],
+        "react/prop-types": "off",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "warn",
+        "react/style-prop-object": "error",
+        "react/no-typos": "error",
+        "react/no-unescaped-entities": "off",
+        "node/no-unsupported-features/es-syntax": "off",
+        "import/no-unresolved": "off",
+        "node/no-missing-import": "off",
+        "react/jsx-props-no-spreading": "off"
+    },
+    "settings": {
+        "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "react": {
+            "version": "detect"
+        }
+    }
+}
