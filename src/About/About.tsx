@@ -5,18 +5,18 @@ import styles from "./About.module.scss";
 
 const About = () => (
     <Paper className={styles.paper} elevation={0}>
-        <Typography gutterBottom variant="h1">
-            About Midchar
+        <Typography className={styles.title} variant="h1">
+            About the app
         </Typography>
         <Typography className={styles.text} variant="subtitle1">
-            Midchar is a create-react-app web application that uses material UI
-            components, scss and typescript to render a random word and indicate
-            the middle character(s). The main functionality is on the Home page
-            where a new random word will appear each time the page loads. The
-            user can also fetch a new word by using the fetch button and can
-            also type in a custom word.
+            Middle character finder is a web application written in React and
+            typescript that uses material UI components, scss and business logic
+            to render a random word and indicate the middle character(s). <br />
+            The main functionality is on the Home page where a new random word
+            will appear each time the page loads. The user can fetch a new word
+            by using the fetch button and can also type in a custom word.
         </Typography>
-        <Typography gutterBottom variant="h2" component="h2">
+        <Typography className={styles.title} variant="h2" component="h2">
             How to use the component?
         </Typography>
         <Typography className={styles.text} variant="subtitle1">
@@ -25,13 +25,10 @@ const About = () => (
             react app, simply render it under the main{" "}
             <strong> {"<App/>"}</strong> component or a route.
         </Typography>
-
-        <Typography gutterBottom variant="h2" component="h2">
+        <Typography className={styles.title} variant="h2" component="h2">
             App.tsx example:
         </Typography>
-
         <CopyBlock
-            className={styles.codeblock}
             text={`const App = () => (
                 <>
                     <ThemeProvider theme={theme}>
@@ -47,11 +44,9 @@ const About = () => (
             theme={dracula}
             wrapLines={false}
         />
-
-        <Typography gutterBottom variant="h2" component="h2">
+        <Typography className={styles.title} variant="h2" component="h2">
             Routes example:
         </Typography>
-
         <CopyBlock
             text={`ReactDOM.render(
                 <BrowserRouter>
@@ -68,8 +63,7 @@ const About = () => (
             theme={dracula}
             wrapLines={false}
         />
-
-        <Typography gutterBottom variant="h2" component="h2">
+        <Typography className={styles.title} variant="h2" component="h2">
             Find middle character logic:
         </Typography>
         <CopyBlock
