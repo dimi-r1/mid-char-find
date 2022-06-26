@@ -16,7 +16,6 @@ import FlyoutPanelMobile from "../FlyoutPanelMobile/FlyoutPanelMobile";
 const navLinks = [
     { name: "Home", to: "/" },
     { name: "About", to: "/about" },
-    { name: "Contact us", to: "/contact" },
 ];
 const NavBar = () => {
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
